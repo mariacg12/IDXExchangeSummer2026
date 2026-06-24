@@ -1,1 +1,23 @@
+# Week 1 Deliverable
 
+## Dataset Access
+- Successfully connected to FTP server.
+- Downloaded monthly CRMLSSold datasets.
+- Verified access to metadata documentation.
+
+## Initial Data Review
+-  ClosePrice is target variable.
+
+## Key Features 
+- ClosePrice
+- BedroomsTotal
+- BathroomsTotalInteger
+- BuildingAreaTotal
+- City
+- PostalCode
+- LotSize
+
+## Next Steps
+- Perform EDA.
+- Analyze missing values.
+- Build train/test split.
