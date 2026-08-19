@@ -1,6 +1,6 @@
 # IDXExchangeSummer2026
 
-Data source:
+---Data source:---
 The dataset was obtained from the California Regional Multiple Listing Service (CRMLS). 
 We explored listing from May 2025-May 2026 and June 2025-June 2026. 
 
@@ -14,7 +14,7 @@ Target Variable: ClosePrice
 
 Since housing prices are highly right-skewed the target variable was log-transformed
 
-Data Processing:
+---Data Processing:---
 
 The files required a lot of data processing, including:
 Combining all the monthly datasets into one.
@@ -26,7 +26,7 @@ Scaling numeric variables
 Log transformation 
 Train test split(Chronologically)
 
-Featuring Engineering:
+---Featuring Engineering:---
 Feature Engineering was done in order to improve our model.
 
 HouseAge: Difference between the year of sale and the year the property was built
@@ -45,8 +45,8 @@ AssociationFee
 ParkingTotal
 GarageSpaces
 
-Outliers:
-Naked Negative values in ParkingTotal and GarageSpaces were replace with missing values.
+---Outliers:---
+Made Negative values in ParkingTotal and GarageSpaces were replace with missing values.
 
 For some property values upper extreme levels were capped at 99th percentile:
 LotSizeAcres
@@ -66,10 +66,10 @@ SubdivisionName
 Removing these variables reduced unnecessary dimension and avoided the model retaining very specific information.
 
 
-Geographic Features:
+---Geographic Features:---
 Latitude and Longitude info was incoaprted to help represent geographic variation in property
 
-Models:
+---Models:---
 Linear Regression
 Decision Tree
 Random Forest
@@ -79,7 +79,7 @@ LightGBM
 
 The first three models were used as a baseline to see our performance. Other models were used to capture more complex relationships within our data. Did some tuning in lightGBM to improve performance.
 
-Evaluation: 
+---Evaluation:--- 
 Used these metrics to evaluate the models:
 R^2: variation in house prices explained by the model
 RMSE: Magnitude of prediction error
@@ -90,7 +90,7 @@ Results:
 
 
 
-   Model
+---Model
 Train R2
 Train RMSE
 Test R2
@@ -153,23 +153,24 @@ Decision Tree
 9.460870
 
 
-Best Model:
+---Best Model:---
 
-Tuned LightGBM
+***Tuned LightGBM***
 
 This model explained 91 percent of the variation in unseen housing prices. Looking at the R2 there is little evidence of overfitting.
 
-Performance by Price Range:
+---Performance by Price Range:---
 The model performed the best with properties between 500k-750k, with the lowest MAPE being 10.8 percent.
 
 Performance remained strong for home between 750k-1M, with the lowest MAPE being 11.5%
 
 There was also high MAPE for prices below 250k, due to unexpected low prices.
 
-Reproducing the Code:
+---Reproducing the Code:---
 *Note: Used Google Colab so I did not need to install the libraries*
 Can download notebooks or clone my IDXExchangeSummer2026 repository
 Progress in these repositories was made weekly, so can reference based on the weekly folders.
+
 Obtain CRMLS dataset and the California School District Areas
 Run preprocessing pipeline
 Run Feature Engineering
