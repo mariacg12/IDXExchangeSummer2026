@@ -27,6 +27,7 @@ Log transformation
 Train test split(Chronologically)
 
 ---Featuring Engineering:---
+
 Feature Engineering was done in order to improve our model.
 
 HouseAge: Difference between the year of sale and the year the property was built
@@ -46,6 +47,7 @@ ParkingTotal
 GarageSpaces
 
 ---Outliers:---
+
 Made Negative values in ParkingTotal and GarageSpaces were replace with missing values.
 
 For some property values upper extreme levels were capped at 99th percentile:
@@ -67,9 +69,11 @@ Removing these variables reduced unnecessary dimension and avoided the model ret
 
 
 ---Geographic Features:---
+
 Latitude and Longitude info was incoaprted to help represent geographic variation in property
 
 ---Models:---
+
 Linear Regression
 Decision Tree
 Random Forest
@@ -80,6 +84,7 @@ LightGBM
 The first three models were used as a baseline to see our performance. Other models were used to capture more complex relationships within our data. Did some tuning in lightGBM to improve performance.
 
 ---Evaluation:--- 
+
 Used these metrics to evaluate the models:
 R^2: variation in house prices explained by the model
 RMSE: Magnitude of prediction error
