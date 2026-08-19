@@ -1,6 +1,7 @@
 # IDXExchangeSummer2026
 
 ---Data source:---
+
 The dataset was obtained from the California Regional Multiple Listing Service (CRMLS). 
 We explored listing from May 2025-May 2026 and June 2025-June 2026. 
 
