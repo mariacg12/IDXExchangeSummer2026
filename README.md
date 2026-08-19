@@ -97,6 +97,7 @@ Test R2
 Test RMSE
 Test MAPE
 Test MdAPE
+
 0
 LightGBM (Tuned)
 0.911748
@@ -105,6 +106,7 @@ LightGBM (Tuned)
 0.205190
 27.366445
 13.425909
+
 1
 Random Forest
 0.985040
@@ -113,6 +115,7 @@ Random Forest
 0.210271
 31.668817
 16.015618
+
 2
 Gradient Boosting
 0.879763
@@ -121,6 +124,7 @@ Gradient Boosting
 0.235123
 21.568911
 8.417956
+
 3
 XGBoost
 0.874159
@@ -129,6 +133,7 @@ XGBoost
 0.237788
 23.524803
 11.551966
+
 4
 Linear Regression
 0.821357
@@ -137,6 +142,7 @@ Linear Regression
 0.280962
 23.497043
 11.399795
+
 5
 Decision Tree
 0.773220
